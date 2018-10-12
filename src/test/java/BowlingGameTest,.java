@@ -13,4 +13,11 @@ public class BowlingGameTest {
   public void setup() {
     bowlingGame = new BowlingGame();
   }
+
+  @Test
+  public void gutterGameThrowsException() {
+    for (int i = 0; i <= 20; i++) {
+      bowlingGame.roll(0);
+    }
+  }
 }
