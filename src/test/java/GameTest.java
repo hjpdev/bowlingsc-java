@@ -4,7 +4,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.sun.source.tree.AssertTree;
+
 import static org.junit.Assert.assertTrue;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class GameTest {
@@ -28,6 +32,7 @@ public class GameTest {
 
   private void rollStrike() {
     game.roll(10);
+    game.roll(0);
   }
 
   @Test
@@ -57,5 +62,39 @@ public class GameTest {
     game.roll(2);
     rollManySame(16, 0);
     assertEquals(20, game.score());
+  }
+
+  @Test
+  public void perfectGame() {
+    for (int i = 0; i < 10; i++) {
+      rollStrike();
+    }
+    assertEquals(300, game.score());
+  }
+
+  @Test
+  public void exampleGame() {
+    game.roll(1);
+    game.roll(4);
+    game.roll(4);
+    game.roll(5);
+    game.roll(6);
+    game.roll(4);
+    game.roll(5);
+    game.roll(5);
+    game.roll(10);
+    game.roll(0);
+    game.roll(0);
+    game.roll(1);
+    game.roll(7);
+    game.roll(3);
+    game.roll(6);
+    game.roll(4);
+    game.roll(10);
+    game.roll(0);
+    game.roll(2);
+    game.roll(8);
+    game.roll(6);
+    assertEquals(133, game.score());
   }
 }

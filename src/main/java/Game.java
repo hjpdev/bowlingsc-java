@@ -1,5 +1,7 @@
 package main.java;
 
+import java.util.ArrayList;
+
 public class Game {
   private int rolls[] = new int[21];
   private int currentRoll = 0;
