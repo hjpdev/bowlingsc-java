@@ -21,6 +21,11 @@ public class GameTest {
     }
   }
 
+  private void rollSpare() {
+    game.roll(5);
+    game.roll(5);
+  }
+
   @Test
   public void gutterGame() {
     rollManySame(20, 0);
@@ -35,8 +40,7 @@ public class GameTest {
 
   @Test
   public void oneSpare() {
-    game.roll(5);
-    game.roll(5);
+    rollSpare();
     game.roll(2);
     rollManySame(17, 0);
     assertEquals(14, game.score());
