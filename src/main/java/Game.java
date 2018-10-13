@@ -1,11 +1,13 @@
 package main.java;
 
 public class Game {
-  public void roll(int pins) {
+  private int score;
 
+  public void roll(int pins) {
+    score += pins;
   }
 
   public int score() {
-    return 0;
+    return score;
   }
 }
