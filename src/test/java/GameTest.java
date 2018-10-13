@@ -2,6 +2,7 @@ import main.java.Game;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import com.sun.source.tree.AssertTree;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
@@ -30,5 +31,14 @@ public class GameTest {
   public void allOnes() {
     rollManySame(20, 1);
     assertEquals(20, game.score());
+  }
+
+  @Test
+  public void oneSpare() {
+    game.roll(5);
+    game.roll(5);
+    game.roll(2);
+    rollManySame(17, 0);
+    assertEquals(14, game.score());
   }
 }
