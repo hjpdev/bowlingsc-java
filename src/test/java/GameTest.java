@@ -1,4 +1,4 @@
-import main.java.BowlingGmae;
+import main.java.Game;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -6,18 +6,19 @@ import com.sun.source.tree.AssertTree;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 
-public class BowlingGameTest {
-  private BowlingGame bowlingGame;
+public class GameTest {
+  private Game game;
 
   @Before
   public void setup() {
-    bowlingGame = new BowlingGame();
+    game = new Game();
   }
 
   @Test
   public void gutterGameThrowsException() {
     for (int i = 0; i <= 20; i++) {
-      bowlingGame.roll(0);
+      game.roll(0);
     }
+    assertEquals(0, game.score());
   }
 }
