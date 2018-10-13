@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameTest" tests="6" skipped="0" failures="3" errors="0" timestamp="2018-10-13T22:08:53" hostname="Harrys-MBP-3.home.gateway" time="0.007">
+<testsuite name="GameTest" tests="6" skipped="0" failures="3" errors="0" timestamp="2018-10-13T22:34:04" hostname="Harrys-MBP-3.home.gateway" time="0.006">
   <properties/>
-  <testcase name="exampleGame" classname="GameTest" time="0.004">
-    <failure message="java.lang.AssertionError: expected:&lt;133&gt; but was:&lt;99&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;133&gt; but was:&lt;99&gt;
+  <testcase name="exampleGame" classname="GameTest" time="0.003">
+    <failure message="java.lang.AssertionError: expected:&lt;133&gt; but was:&lt;109&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;133&gt; but was:&lt;109&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
 	at org.junit.Assert.assertEquals(Assert.java:631)
-	at GameTest.exampleGame(GameTest.java:98)
+	at GameTest.exampleGame(GameTest.java:101)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,7 +58,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="allOnes" classname="GameTest" time="0.001"/>
+  <testcase name="allOnes" classname="GameTest" time="0.0"/>
   <testcase name="gutterGame" classname="GameTest" time="0.0"/>
   <testcase name="oneStrike" classname="GameTest" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;20&gt; but was:&lt;18&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;20&gt; but was:&lt;18&gt;
@@ -118,13 +118,13 @@
 </failure>
   </testcase>
   <testcase name="oneSpare" classname="GameTest" time="0.0"/>
-  <testcase name="perfectGame" classname="GameTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;300&gt; but was:&lt;200&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;300&gt; but was:&lt;200&gt;
+  <testcase name="perfectGame" classname="GameTest" time="0.001">
+    <failure message="java.lang.AssertionError: expected:&lt;300&gt; but was:&lt;210&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;300&gt; but was:&lt;210&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:645)
 	at org.junit.Assert.assertEquals(Assert.java:631)
-	at GameTest.perfectGame(GameTest.java:72)
+	at GameTest.perfectGame(GameTest.java:75)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

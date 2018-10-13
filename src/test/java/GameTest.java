@@ -66,8 +66,11 @@ public class GameTest {
 
   @Test
   public void perfectGame() {
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 9; i++) {
       rollStrike();
+    }
+    for (int i = 0; i < 3; i++) {
+      game.roll(10);
     }
     assertEquals(300, game.score());
   }
