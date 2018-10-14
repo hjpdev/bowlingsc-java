@@ -58,10 +58,10 @@ public class GameTest {
   @Test
   public void oneStrike() {
     rollStrike();
-    game.roll(3);
-    game.roll(2);
+    game.roll(1);
+    game.roll(1);
     rollManySame(16, 0);
-    assertEquals(20, game.score());
+    assertEquals(14, game.score());
   }
 
   @Test
