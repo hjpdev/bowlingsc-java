@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-10-14T11:28:40" hostname="Harrys-MBP-3.home.gateway" time="0.003">
+<testsuite name="GameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-10-14T13:56:37" hostname="Harrys-MBP-3.home.gateway" time="0.005">
   <properties/>
   <testcase name="exampleGame" classname="GameTest" time="0.001"/>
   <testcase name="allOnes" classname="GameTest" time="0.0"/>
-  <testcase name="gutterGame" classname="GameTest" time="0.001"/>
-  <testcase name="oneStrike" classname="GameTest" time="0.0"/>
+  <testcase name="gutterGame" classname="GameTest" time="0.0"/>
+  <testcase name="oneDouble" classname="GameTest" time="0.0"/>
+  <testcase name="oneStrike" classname="GameTest" time="0.001"/>
   <testcase name="oneSpare" classname="GameTest" time="0.0"/>
-  <testcase name="perfectGame" classname="GameTest" time="0.0"/>
+  <testcase name="perfectGame" classname="GameTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

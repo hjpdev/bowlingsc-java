@@ -65,6 +65,16 @@ public class GameTest {
   }
 
   @Test
+  public void oneDouble() {
+    rollStrike();
+    rollStrike();
+    game.roll(1);
+    game.roll(1);
+    rollManySame(14, 0);
+    assertEquals(35, game.score());
+  }
+
+  @Test
   public void perfectGame() {
     for (int i = 0; i < 9; i++) {
       rollStrike();
